@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import { module, test, skip } from 'qunit';
+import { module, test } from 'qunit';
 import { setupTest } from 'ember-qunit';
 import sinon from 'sinon';
 
@@ -1616,7 +1616,7 @@ module('unit/model', function(hooks) {
     );
   });
 
-  skip('DS.Models can have relationships into m3 models', function(assert) {
+  test('DS.Models can have relationships into m3 models', function(assert) {
     let model = run(() => {
       return this.store.push({
         data: {
